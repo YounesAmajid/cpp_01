@@ -6,28 +6,31 @@
 #    By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/24 23:22:08 by yamajid           #+#    #+#              #
-#    Updated: 2023/12/26 21:04:10 by yamajid          ###   ########.fr        #
+#    Updated: 2023/12/26 21:22:30 by yamajid          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Zombie
+NAME 	=	zombie
+Run		=	c++
+FLAGS	=	-Wall -Wextra -Werror -std=c++98
+RM		=	rm -f
 
-Clang = c++
+SRCS 	=	newZombie.cpp randomChump.cpp Zombie.cpp
 
-Flags = -Wall -Wextra -Werror -std=c++98
+OBJS = $(SRCS:.cpp=.o)
 
-RM = rm -rf
 
-SRC = newZombie.cpp randomChump.cpp Zombie.cpp
+all: $(NAME)
 
-all = $(NAME)
+$(NAME): $(OBJS)
+	$(Run) $(FLAGS) -o $(NAME) $(OBJS)
 
-OBJS = $(SRC:.cpp=.o)
+%.o:  %.cpp Zombie.h
+	$(Run) $(FLAGS) -c $< -o $@
 
-$(NAME) : $(OBJS) 
-	$(Clang) $(Flags) $(OBJS)-o $(NAME)
 clean:
 	$(RM) $(OBJS)
-fclean:
+fclean: clean
 	$(RM) $(NAME)
+
 re: fclean all
