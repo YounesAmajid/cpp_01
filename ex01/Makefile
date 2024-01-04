@@ -6,7 +6,7 @@
 #    By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/26 21:24:21 by yamajid           #+#    #+#              #
-#    Updated: 2023/12/27 11:11:52 by yamajid          ###   ########.fr        #
+#    Updated: 2024/01/04 13:37:13 by yamajid          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(Run) $(FLAGS) -o $(NAME) $(OBJS)
 
-%.o:  %.cpp Zombie.h
+%.o:  %.cpp Zombie.hpp
 	$(Run) $(FLAGS) -c $< -o $@
 
 clean:

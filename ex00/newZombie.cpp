@@ -6,7 +6,7 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/24 23:27:32 by yamajid           #+#    #+#             */
-/*   Updated: 2024/01/03 20:09:00 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/01/04 13:35:31 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,4 @@ Zombie *newzombie(std::string name){
     o_zombie->set_name(name);
     return (o_zombie);
 }
+

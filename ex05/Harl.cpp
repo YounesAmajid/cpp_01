@@ -6,7 +6,7 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/28 18:01:04 by yamajid           #+#    #+#             */
-/*   Updated: 2024/01/01 16:48:26 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/01/04 15:00:13 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,18 +27,19 @@ void Harl::complain(std::string level){
 }
 
 void Harl::error(){
-    std::cerr << "ERROR" << std::endl;
+    std::cerr << "ERROR: An error occurred: [error description]" << std::endl;
 }
 
+
 void Harl::info(){
-    std::cout << "INFO" << std::endl;
+    std::cout << "INFO: [information message]" << std::endl;
 }
 
 void Harl::debug(){
-    std::cerr << "DEBUG" << std::endl;
+    std::cerr << "DEBUG: [debug information]" << std::endl;
 }
 
 void Harl::warning(){
-    std::cerr << "WARNING" << std::endl;
+    std::cerr << "WARNING: [warning description]" << std::endl;
 }
 

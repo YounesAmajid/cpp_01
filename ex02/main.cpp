@@ -6,7 +6,7 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/27 11:11:08 by yamajid           #+#    #+#             */
-/*   Updated: 2024/01/03 20:34:52 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/01/04 13:18:24 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int main (){
     std::string str = "HI THIS IS BRAIN";
     std::string *str_p = &str;
     std::string &str_r = str;
-    
+
     std::cout << "stringAddr : " << &str << std::endl;
     std::cout << "stringPTR  : " << str_p << std::endl;
     std::cout << "stringREF  : " << &str_r << std::endl;

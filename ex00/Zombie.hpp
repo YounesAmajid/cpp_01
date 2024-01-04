@@ -6,7 +6,7 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/26 20:56:06 by yamajid           #+#    #+#             */
-/*   Updated: 2024/01/03 20:08:33 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/01/04 13:35:15 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,4 @@ public:
 
 Zombie *newzombie(std::string n_name);
 void randomChump( std::string r_name );
+ 

@@ -6,11 +6,11 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/26 21:25:45 by yamajid           #+#    #+#             */
-/*   Updated: 2023/12/27 11:07:50 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/01/04 13:38:50 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.h"
+#include "Zombie.hpp"
 
 void Zombie::announce(void){
     std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;

@@ -6,11 +6,11 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/27 10:45:54 by yamajid           #+#    #+#             */
-/*   Updated: 2023/12/27 11:00:58 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/01/04 13:39:33 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.h"
+#include "Zombie.hpp"
 
 Zombie* zombieHorde(int N, std::string name){
     Zombie *o_zombie;
