@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.cpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/27 20:29:52 by yamajid           #+#    #+#             */
-/*   Updated: 2024/01/04 10:48:03 by yamajid          ###   ########.fr       */
+/*   Created: 2024/01/03 12:44:29 by yamajid           #+#    #+#             */
+/*   Updated: 2024/01/03 20:15:29 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
+// #include "Zombie.hpp"
 
-Weapon::Weapon(std::string tpe) : type(tpe){
-    
-}
-
-void Weapon::setType(std::string str){
-    type = str;
-}
-
-const std::string& Weapon::getType(){
-    return type;
-}
+// int main ()
+// {
+//     Zombie *new_z = newzombie("newzombie");
+//     randomChump("new zombie");
+//     delete(new_z);
+// }

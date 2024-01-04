@@ -6,7 +6,7 @@
 #    By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/28 18:00:14 by yamajid           #+#    #+#              #
-#    Updated: 2023/12/28 20:43:57 by yamajid          ###   ########.fr        #
+#    Updated: 2023/12/31 11:04:05 by yamajid          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ Run		=	c++
 FLAGS	=	-Wall -Wextra -Werror -std=c++98
 RM		=	rm -f
 
-SRCS 	=	main.cpp 
+SRCS 	=	main.cpp Harl.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 

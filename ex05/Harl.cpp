@@ -6,26 +6,28 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/28 18:01:04 by yamajid           #+#    #+#             */
-/*   Updated: 2023/12/28 20:42:42 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/01/01 16:48:26 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
 
+typedef void (Harl::*ptrf)(void);
+
 void Harl::complain(std::string level){
-    std::map<std::string, void (Harl::*)()> level_f= {
-        {"DEBUG", &Harl::debug},
-        {"INFO", &Harl::info},
-        {"ERROR", &Harl::error},
-        {"WARNING", &Harl::warning}
-    };
-    std::map<std::string, void (Harl::*)()>::iterator it = level_f.find(level);
-    if (it != level_f.end())
-        (this->*(it->second))();
+    
+    std::string array[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+    ptrf f_pointer[4] = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
+    for(int i = 0;i < 4; i++){
+        if (level == array[i]){
+            (this->*f_pointer[i])();
+            return ;
+        }
+    }
 }
 
 void Harl::error(){
-    std::cout << "ERROR" << std::endl;
+    std::cerr << "ERROR" << std::endl;
 }
 
 void Harl::info(){
@@ -33,10 +35,10 @@ void Harl::info(){
 }
 
 void Harl::debug(){
-    std::cout << "DEBUG" << std::endl;
+    std::cerr << "DEBUG" << std::endl;
 }
 
 void Harl::warning(){
-    std::cout << "WARNING" << std::endl;
+    std::cerr << "WARNING" << std::endl;
 }
 

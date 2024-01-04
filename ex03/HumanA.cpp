@@ -6,7 +6,7 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/27 11:33:31 by yamajid           #+#    #+#             */
-/*   Updated: 2023/12/28 12:27:43 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/01/04 10:48:42 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,5 @@ HumanA::HumanA(std::string h_a, Weapon &type) : wpn(type), name(h_a){
 }
 
 void HumanA::attack(){
-    std::cout << name << " attacks with their " << wpn.getWeapon() << std::endl;
+    std::cout << name << " attacks with their " << wpn.getType() << std::endl;
 }

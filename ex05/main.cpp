@@ -6,17 +6,17 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/28 18:01:06 by yamajid           #+#    #+#             */
-/*   Updated: 2023/12/28 20:45:15 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/01/03 21:08:31 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
 
-int main(){
+int main(int argc, char **argv){
 
     Harl hrl;
-   
-   hrl.complain("ERROR");
-   return 0;
+    (void)argc;
+    hrl.complain(argv[1]);
+    return 0;
 
 }

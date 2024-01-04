@@ -6,11 +6,11 @@
 #    By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/27 11:11:28 by yamajid           #+#    #+#              #
-#    Updated: 2023/12/27 11:11:47 by yamajid          ###   ########.fr        #
+#    Updated: 2024/01/03 20:31:39 by yamajid          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME 	=	zombie
+NAME 	=	brain
 Run		=	c++
 FLAGS	=	-Wall -Wextra -Werror -std=c++98
 RM		=	rm -f
@@ -24,9 +24,6 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	$(Run) $(FLAGS) -o $(NAME) $(OBJS)
-
-%.o:  %.cpp Zombie.h
-	$(Run) $(FLAGS) -c $< -o $@
 
 clean:
 	$(RM) $(OBJS)

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.h                                           :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/26 20:56:06 by yamajid           #+#    #+#             */
-/*   Updated: 2023/12/26 21:08:22 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/01/03 20:08:33 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ public:
     std::string get_name();
 };
 
-Zombie *newzombie(std::string name);
-void randomChump( std::string name );
+Zombie *newzombie(std::string n_name);
+void randomChump( std::string r_name );
