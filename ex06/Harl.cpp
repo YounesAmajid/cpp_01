@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/28 18:01:04 by yamajid           #+#    #+#             */
-/*   Updated: 2024/01/04 16:01:26 by yamajid          ###   ########.fr       */
+/*   Created: 2024/01/04 15:51:12 by yamajid           #+#    #+#             */
+/*   Updated: 2024/01/05 10:44:44 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,31 @@
 typedef void (Harl::*ptrf)(void);
 
 void Harl::complain(std::string level){
+    int index;
     
+    index = 0;
     std::string array[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
     ptrf f_pointer[4] = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
-    for(int i = 0;i < 4; i++){
-        if (level == array[i]){
-            (this->*f_pointer[i])();
-            return ;
-        }
+    for(;index < 4; index++)
+        if (level == array[index])
+            break ;
+    if (index == 5)
+        return ;
+    switch (index)
+    {
+        case 0:
+            (this->*f_pointer[0])();
+        case 1:
+            (this->*f_pointer[1])();
+        case 2:
+            (this->*f_pointer[2])();
+        case 3:
+            (this->*f_pointer[3])();
+            break ;
+        default:
+            std::cerr << "Unknown level: " << level << std::endl;
+            break;
     }
-    std::cerr << "Unknown level: " << level << std::endl;
 }
 
 void Harl::error(){
@@ -43,4 +58,3 @@ void Harl::debug(){
 void Harl::warning(){
     std::cerr << "WARNING: [warning description]" << std::endl;
 }
-

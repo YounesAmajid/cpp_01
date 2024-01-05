@@ -1,21 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/03 12:44:29 by yamajid           #+#    #+#             */
-/*   Updated: 2024/01/04 15:48:17 by yamajid          ###   ########.fr       */
+/*   Created: 2024/01/04 15:51:09 by yamajid           #+#    #+#             */
+/*   Updated: 2024/01/04 15:52:46 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#pragma once
 
-int main ()
-{
-    randomChump("new zombie");
-    Zombie *new_z = newzombie("newzombie");
-    new_z->announce();
-    delete(new_z);
-}
+#include <iostream>
+
+class Harl{
+private:
+    void debug();
+    void info();
+    void warning();
+    void error();
+public:
+    void complain(std::string level);
+}; 

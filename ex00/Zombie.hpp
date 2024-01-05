@@ -6,7 +6,7 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/26 20:56:06 by yamajid           #+#    #+#             */
-/*   Updated: 2024/01/04 13:35:15 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/01/04 17:10:12 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 
 #include <iostream>
-#include <string>
-
 
 class Zombie{
 private:
